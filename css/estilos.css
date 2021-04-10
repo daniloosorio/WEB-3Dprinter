@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+}
+/*edicion de la primer pagina*/
+/* asigno tipo de letra y margenes al toda la pagina*/
+body{
+    font-family: Arial;
+    padding: 5px;
+    margin: 5px;
+} 
+/* agrego estilos a la cabecera*/
+header{
+    padding: 5px;
+    width: 100%;
+    background-image: url("img/fondo1.jpg");
+    
+    background-position: center;
+    text-align: center;
+    transition: 2s linear;
+    float: left;
+}
+header:hover{ 
+    background-image: url("img/fondo2.jpg");
+}
+.cabecera{
+    margin: auto;
+    width: 80%;
+}
+header img#logo{
+    margin-top: 10px;
+    width: 150px;
+    height: 120px;
+    transition: 1s linear;
+    float: left;
+}
+header img#logo:hover{
+    transform: rotate(360deg);
+}
+header h1{
+    color:black;
+    font-size: 40px;
+    margin-bottom: 10px;
+    width: 68%;
+    margin-right: 15%;
+    text-shadow: 3px 3px 3px #FFFFFF;
+    float: right;
+}
+header h1:hover{
+    transform: scale(1.2) skew(-10deg);
+}
+header p{
+    color: black;
+    font-size: 20px;
+    width: 68%;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 3px white;
+    margin-right: 15%;
+    float: right;
+}
+header p:hover{
+    transform: scale(1.1) skew(-5deg);
+}
+.menu span{
+    margin-right: 5px;
+}
+
+#btn-menu{
+    display: none;
+}
+/*miniatura del menu*/
+header label{
+    display: none;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    float: left;
+}
+header label:hover{
+    cursor: pointer;
+}
+.menu{
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    display: inline;
+    border-right: 3px solid white;
+}
+.menu a{
+    color: black;
+    padding: 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: color 1s;
+    margin-top: 50px;
+}
+
+.menu a:hover{
+    background-color:#E7E4E3;
+    background-position: center;
+    color: black;
+    border-radius: 30%;
+}
+
+/*agrego estilos a aside lateral izquierdo*/
+.principal{
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.enlaces{
+    
+    width: 20%;
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+    
+    background-color: rgb(202, 236, 236);
+}
+#suport{
+    margin-top: 20px;
+}
+
+#enlace{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-radius: 30%;
+    background-color: #E7E4E3;
+}
+
+#enlace a:visited{
+    color: red;
+}
+#enlace:hover{
+    transform: scale(1.2);
+}
+/*agregar estilos a la seccion central.*/
+.articulo{
+    float: left;
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(202, 236, 236);
+}
+.articulo p{
+    font-size: 20px;
+    text-align: justify;
+
+}
+.articulo p:first-letter{
+    font-size: 25px;
+    padding: 5px;
+    color: black;
+    background-color: #CAF5EC;
+}
+.articulo a{
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 30%;
+    width: 36%;
+    text-align: center;
+    background-color: rgb(143, 173, 165);
+    text-transform: uppercase;
+    color: black;
+    display: block;
+}
+.articulo a:visited{
+    color: red;
+}
+
+.articulo a:hover{
+    transform: scale(1.2);
+}
+/*agrego estilos al aside derecho*/
+
+.noticias{
+    float: left;
+    width: 27%;
+    margin-left: 10px;
+    
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(202, 236, 236);
+}
+.noticias a{
+    color: black;
+    text-align: justify;
+}
+.noticias a:visited{
+    color: red;
+}
+
+p#mas_noticias{
+    padding: 10px;
+    border-radius: 30%;
+    width: 100%;
+    background-color: rgb(143, 173, 165);
+    text-align: center;
+}
+#mas_noticias a:visited{
+    color: red;
+}
+
+p#mas_noticias:hover{
+    transform: scale(1.2);
+}
+/***********************************************edicion de la segunda pagina*******************************/
+.segunda_pagina{
+
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+padding: 10px;
+}
+/*agrego estilos al aside izquierdo*/
+
+.examples{
+    width: 22%;
+    float: left;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(202, 236, 236);
+}
+.examples li{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.examples #barra{
+    height: 15px;
+    width: 100%;
+    background-color: #ddd;
+}
+.examples #puntuacion{
+    height: 15px; 
+    width: 40%; 
+    background-color: #2196F3;
+}
+.examples #puntuacionarqui{
+    height: 15px; 
+    width: 30%; 
+    background-color: rgb(2, 68, 122);
+}
+.examples #puntuacionjuegos{
+    height: 15px; 
+    width: 80%; 
+    background-color: rgb(243, 33, 68);
+}
+/************************************************colocar :hover y colores a los enlaces**************************/
+/* agrego estilos a la ventana que muestra los ejemplos*/
+.varios{
+    width: 76%;
+    float: left;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(202, 236, 236);
+}
+.varios h2{
+    text-align: center;
+}
+#proyectos{
+    padding: 10px;
+    width: 33%;
+    float: left;
+}
+#proyectos img{
+    width: 200px;
+    height: 200px;
+}
+#proyectos img:hover{
+    transform: scale(1.2);
+}
+#proyectos h3{
+    text-align: center;
+}
+p#ref{
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 30%;
+    text-align: center;
+    width: 70%;
+    background-color: #CAF5E9;
+}
+
+#ref a:visited{
+    color: red;
+}
+
+p#ref:hover{
+    transform: scale(1.2);
+}
+/**********************************edicion de la tercer pagina**************************************/
+.tercer_pagina{
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(202, 236, 236);
+}
+.tercer_pagina h1{
+    text-align: center;
+}
+#precios{
+    font-size: 15px;
+    text-align: center;
+    width: 32%;   
+    background-color: #F7DC6F;
+    margin-left: 10px;
+    float: left;
+}
+img#membresia{
+    padding: 10px;
+}
+ div img#membresia:hover{
+    transform: scale(1.1);
+}
+button{
+    border-radius: 10%;
+    padding: 10px;
+    background-color: #212F3C;
+    color: white;
+}
+button:hover{
+    background-color: gray;
+    color: black;
+    transform: scale(1.5);
+}
+/*******************************edicion cuarta pagina y el pie de pagina********************************/
+.cuarta_pagina{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(202, 236, 236);
+}
+.cuarta_pagina h2{
+    text-align: center;
+}
+.PLANTILLA{
+    width: 97%;
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: rgb(202, 236, 236);
+    float: left;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.PLANTILLA #PLANTILLA1{
+  
+    width: 33.32%;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+.PLANTILLA #PLANTILLA1 img{
+    width: 200px;
+    height: 200px;
+    height: 150px;
+}
+
+.cuarta_pagina form{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+footer{
+    text-align: center;
+}
+.enviar{
+    padding: 10px;
+    color: white;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    background-color: rgb(5, 64, 119);
+    text-transform: uppercase;
+}
+
+.enviar:hover{
+    background-color: gray;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+@media screen and (max-width: 600px){
+    header,.enlaces,.articulo,.noticias,.examples,.varios,#proyectos,#precios,form,.PLANTILLA #PLANTILLA1{
+        width: 100%;
+        border: 1px solid;
+    }
+header label{
+    display: block;
+    position: fixed;
+}
+header img#logo{
+    margin-left: 120px;
+    width: 150px;
+    height: 150px;
+}
+.articulo,.varios,.noticias{
+    margin-top: 10px;
+    margin-left: 0px;
+}
+#varios{
+    margin-top: 50px;
+}
+#precios{
+    margin: auto;
+}
+.menu{
+    position: fixed;
+    width: 85%;
+    margin-left: 50px;
+    margin-top: -60%;
+    transition: 1s;
+    background-color: rgb(248, 234, 234);
+}
+.menu ul{
+    flex-direction: column;
+}
+.menu li{
+    margin-top: 20px;
+    border: 0px;
+    margin-left: -60px;
+}
+#btn-menu:checked ~ .menu{
+    margin-top: 15px;
+}
+}
